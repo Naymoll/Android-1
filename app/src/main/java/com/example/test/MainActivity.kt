@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSnackbar(view: View, message: String) {
-        Snackbar.make(view, message, Snackbar.LENGTH_LONG).show()
+        val snackbar = Snackbar.make(view, message, Snackbar.LENGTH_INDEFINITE)
+        snackbar.setAction("Close") {
+            snackbar.dismiss()
+        }
+        snackbar.show()
     }
 }

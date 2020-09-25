@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstNumber"
         tools:ignore="MissingConstraints"
-        tools:text="Sum"
+        android:text="Sum"
         tools:visibility="visible">
 
     </Button>
